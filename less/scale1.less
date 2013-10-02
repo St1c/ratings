@@ -1,0 +1,15 @@
+.scale1 {
+	.btn-rating {
+		.btn-gradient {
+			.btn-default();
+			background-color: rgba(0,0,0,0);
+			border: 1px #fff solid;
+			&.disabled,
+			&[disabled],
+			fieldset[disabled] & {
+				.opacity(.2);
+			}
+		}
+		#gradient > .horizontal-three-colors(@brand-danger, @brand-warning, 50%, @brand-success);
+	}
+}

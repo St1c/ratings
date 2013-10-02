@@ -1,0 +1,55 @@
+/* ==========================================================================
+   Author's custom styles
+   ========================================================================== */
+
+@font-family-base: 		"HelveticaNeue-Light", "Helvetica Neue Light", "Helvetica Neue", Helvetica, Arial, "Lucida Grande", sans-serif; 
+
+/* Change Bootstrap default colors */
+
+@brand-primary:         #F25C60;
+@brand-success:         #5cb85c;
+@brand-warning:         #f0ad4e;
+@brand-danger:          #d9534f;
+@brand-info:            #5bc0de;
+
+@btn-default-color:		#ffffff;
+@btn-default-bg:		#474949;
+@btn-default-border:	#474949;
+
+@border-radius-base:        0px;
+@border-radius-large:       0px;
+@border-radius-small:       0px;
+
+
+.btn {
+	font-weight: 500;
+}
+
+body { 
+	padding-top: 20px; 
+	padding-bottom: 20px;
+	background: transparent url('../img/low_contrast_linen.png') 0 0 repeat;
+}
+
+.danger {
+	color: @brand-danger;
+}
+
+#ajax-spinner { background: transparent url('../img/ajax-loader.gif') no-repeat 50% 50%; padding: 16px; margin-bottom: 20px;}
+
+.btn-continue { 
+	text-align: center;
+	margin-bottom: 20px;
+}
+
+/* @brand-primary background color on quality buttons */
+.btn-group {
+	.btn-default{
+		&.active {
+			background-color: @brand-primary;
+			border-color: @brand-primary;
+			box-shadow: none;
+		}
+	}
+}
+

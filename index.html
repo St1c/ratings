@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!--> <html class="no-js"> <!--<![endif]-->
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+	<meta name="viewport" content="width=device-width">
+
+	<meta property="og:title" content="Screen quality test." />
+	<meta property="og:type" content="website" />
+	<meta property="og:url" content="http://qoe.dataworkers.eu/" />
+	<meta property="og:description"   content="This application is a very simple screen quality test, which enables you to compare your monitor quality with others.  Simply count the visible number and answer the questions." /> 
+	<meta property="og:image"  content="http://qoe.dataworkers.eu/css/img/logo.png" /> 
+
+	<title>Screen Quality Test</title>
+	<meta name="description" content="This application is a very simple screen quality test, which enables you to compare your monitor quality with others.  Simply count the visible number and answer the questions.">
+
+	<link rel="stylesheet" href="css/main.css">
+	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
+</head>
+<body>
+		<!--[if lt IE 7]>
+				<p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">activate Google Chrome Frame</a> to improve your experience.</p>
+		<![endif]-->
+		<div class="container-narrow">
+
+			<div class="header">
+				<ul class="nav nav-pills pull-right">
+
+					<li class="dropdown active">
+						<a class="dropdown-toggle" data-toggle="dropdown" href="#">
+							Test <span class="caret"></span>
+						</a>
+						<ul class="dropdown-menu">
+							<li><a href="#">Screen</a></li>
+							<li><a href="#">Player</a></li>
+						</ul>
+					</li>				
+					<li><a href="#">Results</a></li>
+					<li><a href="#">Sign out</a></li>
+				</ul>
+				<a href="#"><h3 class="text-muted">Screen Test</h3></a>
+			</div>
+
+			<!-- Main Content -->
+			<blockquote>
+				<p>This is the last part of the test. Please watch the following <strong>20 sec video</strong>.</p> 
+				<small>After watching the entire clip, please give rating on the scale below.</small>
+			</blockquote>
+
+			<div id="player-wp" class="player-wp">
+				<img src="img/player.png" class="img-responsive">
+			</div>
+
+			<form class="form-horizontal player-form" action="#" method="post" id="frm-playerForm">		
+
+					<legend class="quality-change">Did you notice any changes in quality?</legend>
+					
+					<div class="btn-group btn-group-justified ratings" data-toggle="buttons">
+							<label class="btn btn-default" for="frmplayerForm-qualityChange-0"> <input type="radio" name="qualityChange" id="frmplayerForm-qualityChange-0" value="1" />  Yes </label>
+							<label class="btn btn-default" for="frmplayerForm-qualityChange-1"> <input type="radio" name="qualityChange" id="frmplayerForm-qualityChange-1" value="0" />  No </label>
+					</div>
+
+					<legend class="quality">How would you rate the overall quality of this video? </legend>
+
+					<!-- Rating scale 1 -->
+					<div class="scale1">
+						<div class="btn-rating">
+							<div class="btn-group btn-group-justified ratings" data-toggle="buttons">
+								<label class="btn btn-gradient disabled">Very bad</label>
+									<label class="btn btn-gradient" for="frmplayerForm-quality-0"> <input type="radio" name="quality" id="frmplayerForm-quality-0" value="1" />  Bad </label>
+									<label class="btn btn-gradient" for="frmplayerForm-quality-1"> <input type="radio" name="quality" id="frmplayerForm-quality-1" value="2" />  Poor </label>
+									<label class="btn btn-gradient" for="frmplayerForm-quality-2"> <input type="radio" name="quality" id="frmplayerForm-quality-2" value="3" />  Fair </label>
+									<label class="btn btn-gradient" for="frmplayerForm-quality-3"> <input type="radio" name="quality" id="frmplayerForm-quality-3" value="4" />  Good </label>
+									<label class="btn btn-gradient" for="frmplayerForm-quality-4"> <input type="radio" name="quality" id="frmplayerForm-quality-4" value="5" />  Excellent </label>
+								<label class="btn btn-gradient disabled">Ideal</label>
+							</div>
+						</div>
+					</div>
+
+					<!-- Rating scale 2 -->
+					
+
+					<!-- Rating scale 3 -->
+					
+
+					<!-- Rating scale 4 -->
+					
+
+					<!-- Rating scale 5 -->
+					
+
+					<!-- Rating scale 6 -->
+
+					<div class="btn-continue">
+						<input class="btn btn-lg btn-success" type="submit" name="submit_" id="frmplayerForm-submit" value="And finish..."/>
+					</div>
+			</form>
+
+			<!-- Modal -->
+			<div id="myModal" class="modal fade">
+				<div class="modal-dialog">
+					<div class="modal-content">
+						<div class="modal-header">
+							<button type="button" class="close" data-dismiss="modal">&times;</button>
+							<h3 id="myModalLabel">Note</h3>
+						</div>
+						<div class="modal-body">
+							<p>I have noticed that perhaps You did not watch the entire clip. Although You can continue, this might cause the results to be <strong>inaccurate</strong>. Do you wish to continue?</p>
+						</div>
+						<div class="modal-footer">
+							<button class="btn btn-default" data-dismiss="modal" id="modal-btn-again">Play again</button>
+							<button class="btn btn-danger" id="modal-btn-continue">Continue</button>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- /.Main Content -->
+
+			<div class="footer">
+				<p class="pull-right"><small>&copy; FTW 2013</small></p>
+			</div>
+
+		</div>
+		<!-- /.container-narrow -->
+		
+		<script src="js/vendor/jquery-1.10.1.min.js"></script>
+		<script src="js/vendor/bootstrap.min.js"></script>
+		<script src="js/main-ck.js"></script>
+
+</body>
+</html>
