@@ -1,0 +1,38 @@
+.scale3 {
+	margin-bottom: 20px;
+	#gradient > .horizontal-three-colors(@brand-danger, @brand-warning, 50%, @brand-success);
+
+	.btn-gradient {
+		.btn-default();
+		background-color: rgba(0,0,0,0);
+		border: 1px solid #fff;
+		
+		&:active,
+		&.active {
+			background-color: @btn-default-bg;
+			border-color: #fff;
+			box-shadow: none;
+		}
+
+		&.disabled,
+		&[disabled],
+		fieldset[disabled] & {
+			.opacity(0);
+			border: 1px solid #fff;
+		}
+
+		&:focus {
+		}
+
+		&:hover,
+		&:focus {
+			border: 1px solid #fff;
+
+		}
+	}
+
+	.gradient-scale {
+		#gradient > .horizontal-three-colors(@brand-danger, @brand-warning, 50%, @brand-success);
+		height: 10px;
+	}
+}

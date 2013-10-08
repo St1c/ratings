@@ -18,7 +18,8 @@
 	<meta name="description" content="This application is a very simple screen quality test, which enables you to compare your monitor quality with others.  Simply count the visible number and answer the questions.">
 
 	<link rel="stylesheet/less" type="text/css" href="less/main.less" />
-
+	<!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+	
 	<script src="js/vendor/less.js" type="text/javascript"></script>
 	<script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script>
 </head>
@@ -65,28 +66,141 @@
 							<label class="btn btn-default" for="frmplayerForm-qualityChange-1"> <input type="radio" name="qualityChange" id="frmplayerForm-qualityChange-1" value="0" />  No </label>
 					</div>
 
-					<legend class="quality">How would you rate the overall quality of this video? </legend>
+					<legend class="quality">How would you rate the overall quality of this video? (ACR 5)</legend>
 
 					<!-- Rating scale 1 -->
 					<div class="scale1">
-						<div class="btn-rating">
-							<div class="btn-group btn-group-justified ratings" data-toggle="buttons">
-								<label class="btn btn-gradient disabled">Very bad</label>
-									<label class="btn btn-gradient" for="frmplayerForm-quality-0"> <input type="radio" name="quality" id="frmplayerForm-quality-0" value="1" />  Bad </label>
-									<label class="btn btn-gradient" for="frmplayerForm-quality-1"> <input type="radio" name="quality" id="frmplayerForm-quality-1" value="2" />  Poor </label>
-									<label class="btn btn-gradient" for="frmplayerForm-quality-2"> <input type="radio" name="quality" id="frmplayerForm-quality-2" value="3" />  Fair </label>
-									<label class="btn btn-gradient" for="frmplayerForm-quality-3"> <input type="radio" name="quality" id="frmplayerForm-quality-3" value="4" />  Good </label>
-									<label class="btn btn-gradient" for="frmplayerForm-quality-4"> <input type="radio" name="quality" id="frmplayerForm-quality-4" value="5" />  Excellent </label>
-								<label class="btn btn-gradient disabled">Ideal</label>
-							</div>
+						<div class="btn-group btn-group-justified ratings" data-toggle="buttons">
+							
+							<label class="btn btn-gradient disabled">Very bad</label>
+							
+							<label class="btn btn-gradient" for="frmplayerForm-quality-0"> <input type="radio" name="quality" id="frmplayerForm-quality-0" value="1" />  Bad </label>
+							
+							<label class="btn btn-gradient" for="frmplayerForm-quality-1"> <input type="radio" name="quality" id="frmplayerForm-quality-1" value="2" />  Poor </label>
+							
+							<label class="btn btn-gradient" for="frmplayerForm-quality-2"> <input type="radio" name="quality" id="frmplayerForm-quality-2" value="3" />  Fair </label>
+							
+							<label class="btn btn-gradient" for="frmplayerForm-quality-3"> <input type="radio" name="quality" id="frmplayerForm-quality-3" value="4" />  Good </label>
+							
+							<label class="btn btn-gradient" for="frmplayerForm-quality-4"> <input type="radio" name="quality" id="frmplayerForm-quality-4" value="5" />  Excellent </label>
+							
+							<label class="btn btn-gradient disabled">Ideal</label>
+
 						</div>
 					</div>
 
 					<!-- Rating scale 2 -->
-					
+					<legend class="quality">How would you rate the overall quality of this video? (ACR 11)</legend>
+
+					<div class="scale2">
+						<div class="btn-group btn-group-justified" data-toggle="buttons">
+							
+							<label class="btn btn-gradient disabled">
+								&nbsp;
+							</label>
+
+							<label class="btn btn-gradient" for="frmplayerForm-quality-0">
+								<input type="radio" name="quality" id="frmplayerForm-quality-0" value="1" />
+								Bad
+							</label>
+							
+							<label class="btn btn-gradient" for="frmplayerForm-quality-1">
+								<input type="radio" name="quality" id="frmplayerForm-quality-1" value="2" />
+								&nbsp;
+							</label>
+
+							<label class="btn btn-gradient" for="frmplayerForm-quality-1">
+								<input type="radio" name="quality" id="frmplayerForm-quality-1" value="3" />
+								Poor
+							</label>
+							
+							<label class="btn btn-gradient" for="frmplayerForm-quality-2"> 
+								<input type="radio" name="quality" id="frmplayerForm-quality-2" value="4" />
+								&nbsp;
+							</label>
+
+							<label class="btn btn-gradient" for="frmplayerForm-quality-2"> 
+								<input type="radio" name="quality" id="frmplayerForm-quality-2" value="5" />
+								Fair
+							</label>
+							
+							<label class="btn btn-gradient" for="frmplayerForm-quality-3">
+								<input type="radio" name="quality" id="frmplayerForm-quality-3" value="6" />
+								&nbsp;
+							</label>
+
+							<label class="btn btn-gradient" for="frmplayerForm-quality-3">
+								<input type="radio" name="quality" id="frmplayerForm-quality-3" value="7" />
+								Good
+							</label>
+							
+							<label class="btn btn-gradient" for="frmplayerForm-quality-4">
+								<input type="radio" name="quality" id="frmplayerForm-quality-4" value="8" />
+								&nbsp;
+							</label>
+							
+							<label class="btn btn-gradient" for="frmplayerForm-quality-4">
+								<input type="radio" name="quality" id="frmplayerForm-quality-4" value="9" />
+								Perfect
+							</label>
+
+							<label class="btn btn-gradient disabled">
+								&nbsp;
+							</label>
+						</div>
+					</div>					
 
 					<!-- Rating scale 3 -->
-					
+					<legend class="quality">How would you rate the overall quality of this video? (ACR 9)</legend>
+
+					<div class="scale3">
+						<div class="btn-group btn-group-justified" data-toggle="buttons">
+							<label class="btn btn-gradient" for="frmplayerForm-quality-0">
+								<input type="radio" name="quality" id="frmplayerForm-quality-0" value="1" />
+								Bad
+							</label>
+							
+							<label class="btn btn-gradient" for="frmplayerForm-quality-1">
+								<input type="radio" name="quality" id="frmplayerForm-quality-1" value="2" />
+								&nbsp;
+							</label>
+
+							<label class="btn btn-gradient" for="frmplayerForm-quality-1">
+								<input type="radio" name="quality" id="frmplayerForm-quality-1" value="3" />
+								Poor
+							</label>
+							
+							<label class="btn btn-gradient" for="frmplayerForm-quality-2"> 
+								<input type="radio" name="quality" id="frmplayerForm-quality-2" value="4" />
+								&nbsp;
+							</label>
+
+							<label class="btn btn-gradient" for="frmplayerForm-quality-2"> 
+								<input type="radio" name="quality" id="frmplayerForm-quality-2" value="5" />
+								Fair
+							</label>
+							
+							<label class="btn btn-gradient" for="frmplayerForm-quality-3">
+								<input type="radio" name="quality" id="frmplayerForm-quality-3" value="6" />
+								&nbsp;
+							</label>
+
+							<label class="btn btn-gradient" for="frmplayerForm-quality-3">
+								<input type="radio" name="quality" id="frmplayerForm-quality-3" value="7" />
+								Good
+							</label>
+							
+							<label class="btn btn-gradient" for="frmplayerForm-quality-4">
+								<input type="radio" name="quality" id="frmplayerForm-quality-4" value="8" />
+								&nbsp;
+							</label>
+							
+							<label class="btn btn-gradient" for="frmplayerForm-quality-4">
+								<input type="radio" name="quality" id="frmplayerForm-quality-4" value="9" />
+								Excellent
+							</label>
+						</div>
+					</div>					
 
 					<!-- Rating scale 4 -->
 					
