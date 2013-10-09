@@ -6530,8 +6530,8 @@ td.visible-print {
 }
 /* Flowplayer setup */
 .player-wp {
-  width: 700px;
-  height: 394px;
+  width: 900px;
+  height: 506px;
   margin: 0 0 20px;
 }
 .player-form legend {
@@ -6585,6 +6585,9 @@ body {
   background: transparent url('../img/ajax-loader.gif') no-repeat 50% 50%;
   padding: 16px;
   margin-bottom: 20px;
+}
+.container-narrow {
+  max-width: 960px;
 }
 .btn-continue {
   text-align: center;
@@ -6660,8 +6663,6 @@ fieldset[disabled] .scale1 .btn-gradient {
   opacity: 0.3;
   filter: alpha(opacity=30);
   color: #ffffff;
-  color: #fff;
-  text-decoration: none;
 }
 .scale2 {
   margin-bottom: 20px;
