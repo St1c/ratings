@@ -13,13 +13,13 @@
 	.lh-border-radius(0px);
 	.lh-transition(all 0.3s linear);
 
-	&:active,
+	&.active,
 	&:hover {
 	    // position: relative;
    	    height: 65px;
 	    background: @btn-default-bg;
-	    border-color: #d29a3a #cc9436 #c89133;
-	    .lh-background-image(linear-gradient(to bottom, #fec354 0%, #fecd61 100%));
+	    // border-color: #d29a3a #cc9436 #c89133;
+	    // .lh-background-image(linear-gradient(to bottom, #fec354 0%, #fecd61 100%));
 
 	   .a-btn-text {
 	    	color: #24221F;
@@ -31,9 +31,13 @@
 		
 		.a-btn-icon-right span {
 	    	opacity: 1;
-			// .rotate(-45deg);
+			.rotate(-45deg);
 		}
 	}
+
+    input {
+        display: none;
+    }
 }
 
 .a-btn-text {
@@ -84,7 +88,7 @@
     left: 50%;
     top: 50%;
     margin: -20px 0px 0px -20px;
-    // background: transparent url(../img/arrow_right.png) no-repeat 50% 55%;
+    background: transparent url(../img/arrow_right.png) no-repeat 50% 55%;
 
     .lh-transition(all 0.3s linear);
 }

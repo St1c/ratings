@@ -6772,28 +6772,28 @@ fieldset[disabled] .scale3 .btn-gradient {
   -o-transition: all 0.3s linear;
   transition: all 0.3s linear;
 }
-.a-btn:active,
+.a-btn.active,
 .a-btn:hover {
   height: 65px;
   background: #474949;
-  border-color: #d29a3a #cc9436 #c89133;
-  background-image: url(data:image/svg+xml;base64,PD94bWwgdmVyc2lvbj0iMS4wIiA/PjxzdmcgeG1sbnM9Imh0dHA6Ly93d3cudzMub3JnLzIwMDAvc3ZnIiB3aWR0aD0iMTAwJSIgaGVpZ2h0PSIxMDAlIiB2aWV3Qm94PSIwIDAgMSAxIiBwcmVzZXJ2ZUFzcGVjdFJhdGlvPSJub25lIj48bGluZWFyR3JhZGllbnQgaWQ9Imxlc3NoYXQtZ2VuZXJhdGVkIiBncmFkaWVudFVuaXRzPSJ1c2VyU3BhY2VPblVzZSIgeDE9IjAlIiB5MT0iMCUiIHgyPSIwJSIgeTI9IjEwMCUiPjxzdG9wIG9mZnNldD0iMCUiIHN0b3AtY29sb3I9IiNmZWMzNTQiIHN0b3Atb3BhY2l0eT0iMSIvPjxzdG9wIG9mZnNldD0iMTAwJSIgc3RvcC1jb2xvcj0iI2ZlY2Q2MSIgc3RvcC1vcGFjaXR5PSIxIi8+PC9saW5lYXJHcmFkaWVudD48cmVjdCB4PSIwIiB5PSIwIiB3aWR0aD0iMSIgaGVpZ2h0PSIxIiBmaWxsPSJ1cmwoI2xlc3NoYXQtZ2VuZXJhdGVkKSIgLz48L3N2Zz4=);
-  background-image: -webkit-linear-gradient(top, #fec354 0%, #fecd61 100%);
-  background-image: -moz-linear-gradient(top, #fec354 0%, #fecd61 100%);
-  background-image: -o-linear-gradient(top, #fec354 0%, #fecd61 100%);
-  background-image: linear-gradient(to bottom, #fec354 0%, #fecd61 100%);
 }
-.a-btn:active .a-btn-text,
+.a-btn.active .a-btn-text,
 .a-btn:hover .a-btn-text {
   color: #24221F;
 }
-.a-btn:active .a-btn-slide-text,
+.a-btn.active .a-btn-slide-text,
 .a-btn:hover .a-btn-slide-text {
   height: 30px;
 }
-.a-btn:active .a-btn-icon-right span,
+.a-btn.active .a-btn-icon-right span,
 .a-btn:hover .a-btn-icon-right span {
   opacity: 1;
+  -webkit-transform: rotate(-45deg);
+  -ms-transform: rotate(-45deg);
+  transform: rotate(-45deg);
+}
+.a-btn input {
+  display: none;
 }
 .a-btn-text {
   padding-top: 5px;
@@ -6837,6 +6837,7 @@ fieldset[disabled] .scale3 .btn-gradient {
   left: 50%;
   top: 50%;
   margin: -20px 0px 0px -20px;
+  background: transparent url(../img/arrow_right.png) no-repeat 50% 55%;
   -webkit-transition: all 0.3s linear;
   -moz-transition: all 0.3s linear;
   -o-transition: all 0.3s linear;
