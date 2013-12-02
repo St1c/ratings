@@ -1,0 +1,110 @@
+.a-btn {
+	background: #fecc5f;
+	// border: 1px solid #f5b74e;
+	// border-color: #f5b74e #e5a73e #d6982f;
+	padding: 0px 80px 0px 10px;
+	height: 38px;
+	display: inline-block;
+	position: relative;
+	float: left;
+	margin: 10px;
+	overflow: hidden;
+
+	.lh-border-radius(0px);
+	.lh-transition(all 0.3s linear);
+
+	&:active,
+	&:hover {
+	    // position: relative;
+   	    height: 65px;
+	    background: @btn-default-bg;
+	    border-color: #d29a3a #cc9436 #c89133;
+	    .lh-background-image(linear-gradient(to bottom, #fec354 0%, #fecd61 100%));
+
+	   .a-btn-text {
+	    	color: #24221F;
+		}
+		
+		.a-btn-slide-text {
+	    	height: 30px;
+		}
+		
+		.a-btn-icon-right span {
+	    	opacity: 1;
+			// .rotate(-45deg);
+		}
+	}
+}
+
+.a-btn-text {
+    padding-top: 5px;
+    display: block;
+    font-size: 18px;
+    white-space: nowrap;
+    color: #FFFFFF;
+
+    .lh-transition(all 0.3s linear);
+}
+
+.a-btn-slide-text {
+    position: absolute;
+    top: 35px;
+    left: 0px;
+    width: auto;
+    right: 52px;
+    height: 0px;
+    background: #fff;
+    color: #24221F;
+    // font-size: 13px;
+    // white-space: nowrap;
+    // font-family: Arial, serif;
+    // font-style: italic;
+    // text-indent: 15px;
+    overflow: hidden;
+    line-height: 30px;
+
+    .lh-transition(height 0.3s linear);
+}
+
+.a-btn-icon-right {
+    position: absolute;
+    right: 0px;
+    top: 0px;
+    height: 100%;
+    width: 52px;
+    // border-left: 1px solid #f5b74e;
+    
+}
+
+.a-btn-icon-right span {
+    width: 38px;
+    height: 38px;
+    opacity: 0.7;
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin: -20px 0px 0px -20px;
+    // background: transparent url(../img/arrow_right.png) no-repeat 50% 55%;
+
+    .lh-transition(all 0.3s linear);
+}
+
+.a-btn1 {
+    .lh-background-image(linear-gradient(to bottom, #FE7177 0%, #FC233D 100%));
+}
+
+.a-btn2 {
+    .lh-background-image(linear-gradient(to bottom, #FE9871 0%, #FC6823 100%));
+}
+
+.a-btn3 {
+    .lh-background-image(linear-gradient(to bottom, #FEE271 0%, #FCC823 100%));
+}
+
+.a-btn4 {
+    .lh-background-image(linear-gradient(to bottom, #D7FE71 0%, #D1FC23 100%));
+}
+
+.a-btn5 {
+    .lh-background-image(linear-gradient(to bottom, #3C8033 0%, #21BB13 100%));
+}
