@@ -1,0 +1,55 @@
+.scale6 {
+    float:left;    
+}
+
+
+    .scale6:not(:checked) > input {
+        position:absolute;
+        top:-9999px;
+        clip:rect(0,0,0,0);
+    }
+
+    .scale6:not(:checked) > label {
+        float:right;
+        width:3em;
+        padding:0 .1em;
+        overflow:hidden;
+        white-space:nowrap;
+        cursor:pointer;
+        font-size:400%;
+        line-height:1.2;
+        color:#ddd;    
+    }
+
+    .scale6:not(:checked) > label:before {
+
+        content: '★' ;
+    }
+
+    .scale6 > input:checked ~ label {
+        color: #f70;
+        
+    }
+
+    .scale6:not(:checked) > label:hover,
+    .scale6:not(:checked) > label:hover ~ label {
+        color: gold;
+        
+        
+    }
+
+    .scale6 > input:checked + label:hover,
+    .scale6 > input:checked + label:hover ~ label,
+    .scale6 > input:checked ~ label:hover,
+    .scale6 > input:checked ~ label:hover ~ label,
+    .scale6 > label:hover ~ input:checked ~ label {
+
+        color: #ea0;    
+    }
+
+    .scale6 > label:active {
+        position:relative;
+        top:2px;
+        left:2px;    
+    
+    }
