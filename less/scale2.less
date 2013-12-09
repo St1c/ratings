@@ -1,12 +1,12 @@
 .scale2 {
-	margin-bottom: 20px;
-	#gradient > .horizontal-three-colors(@brand-danger, @brand-warning, 50%, @brand-success);
 
 	.btn-gradient {
 		.btn-default();
 		background-color: rgba(0,0,0,0);
 		border: 1px solid #fff;
 
+		&:hover,
+		&:focus,
 		&:active,
 		&.active {
 			background-color: @btn-default-bg;
@@ -17,22 +17,20 @@
 		&.disabled,
 		&[disabled],
 		fieldset[disabled] & {
+			.opacity(.2);
 			border: 1px solid #fff;
-			background-color: rgba(0,0,0,0);
+			// background-color: rgba(0,0,0,0);
 		}
 
 		&:focus {
 		}
 
-		&:hover,
-		&:focus {
-			border: 1px solid #fff;
+		// &:hover,
+		// &:focus {
+		// 	border: 1px solid #fff;
 
-		}
+		// }
 	}
 
-	.gradient-scale {
-		#gradient > .horizontal-three-colors(@brand-danger, @brand-warning, 50%, @brand-success);
-		height: 10px;
-	}
+	#gradient > .horizontal-three-colors(@brand-danger, @brand-warning, 50%, @brand-success);
 }

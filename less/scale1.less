@@ -1,13 +1,16 @@
 .scale1 {
+
 	.btn-gradient {
 		.btn-default();
 		background-color: rgba(0,0,0,0);
-		border: 0px;
+		border: 1px solid #fff;
 		
+		&:hover,
+		&:focus,
 		&:active,
 		&.active {
 			background-color: @btn-default-bg;
-			border-color: @brand-primary;
+			border-color: #fff;
 			box-shadow: none;
 		}
 
@@ -15,17 +18,18 @@
 		&[disabled],
 		fieldset[disabled] & {
 			.opacity(.2);
+			border: 1px solid #fff;
 		}
 
 		&:focus {
 		}
 
-		&:hover,
-		&:focus {
-			.opacity(.3);
-			color: @btn-default-color;
-			// color: #fff;
-		}
+		// &:hover,
+		// &:focus {
+		// 	.opacity(.3);
+		// 	color: @btn-default-color;
+		// 	// color: #fff;
+		// }
 
 	}
 
