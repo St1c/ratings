@@ -1,7 +1,5 @@
 .scale6 {
 	float: left;
-	// margin: 0 0 5px 90px;
-	text-align: center;
 
 	&:not(:checked) > input {
 		position: absolute;
@@ -9,7 +7,6 @@
 		clip: rect(0,0,0,0);
 
 		&:checked ~ label {
-			// color: @btn-default-bg;
 			color: #ffd700;
 		}
 	}
@@ -17,8 +14,7 @@
 	&:not(:checked) > label {
 		float: right;
 		
-		// width: 160px;
-		margin-left: 20px;
+		margin-left: 15px;
 		padding: 0 .1em;
 		overflow: hidden;
 		
@@ -29,14 +25,9 @@
 		white-space: nowrap;
 		cursor: pointer;
 
-		// &:before {
-		// 	content: '★' ;
-		// }
-
 		&:hover,
 		&:hover ~ label {
 			color: @btn-default-bg;
-			// color: #FFD700;
 		}
 	}
 
@@ -45,7 +36,6 @@
 	> input:checked ~ label:hover,
 	> input:checked ~ label:hover ~ label,
 	> label:hover ~ input:checked ~ label {
-		// color: #FFD700;    
 		color: @btn-default-bg;    
 	}
 
@@ -58,7 +48,7 @@
 	#rate-output {
 		float: right;
 
-		margin-left: 20px;
+		margin-left: 35px;
 		padding: 0 0.1em;
 		overflow: hidden;
 

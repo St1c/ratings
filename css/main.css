@@ -6926,7 +6926,6 @@ fieldset[disabled] .scale2 .btn-gradient {
 }
 .scale6 {
   float: left;
-  text-align: center;
 }
 .scale6:not(:checked) > input {
   position: absolute;
@@ -6938,7 +6937,7 @@ fieldset[disabled] .scale2 .btn-gradient {
 }
 .scale6:not(:checked) > label {
   float: right;
-  margin-left: 20px;
+  margin-left: 15px;
   padding: 0 .1em;
   overflow: hidden;
   font-size: 400%;
@@ -6965,7 +6964,7 @@ fieldset[disabled] .scale2 .btn-gradient {
 }
 .scale6 #rate-output {
   float: right;
-  margin-left: 20px;
+  margin-left: 35px;
   padding: 0 0.1em;
   overflow: hidden;
   font-size: 400%;
