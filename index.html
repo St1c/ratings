@@ -17,14 +17,21 @@
 	<title>Screen Quality Test</title>
 	<meta name="description" content="This application is a very simple screen quality test, which enables you to compare your monitor quality with others.  Simply count the visible number and answer the questions.">
 
-	<link rel="stylesheet/less" type="text/css" href="less/main.less" />
-	<!-- <link rel="stylesheet" type="text/css" href="css/main.css"> -->
+	<!-- <link rel="stylesheet/less" type="text/css" href="less/main.less" /> -->
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 	
 	<script src="js/vendor/less.js" type="text/javascript"></script>
 	<!-- // <script src="js/vendor/modernizr-2.6.2-respond-1.1.0.min.js"></script> -->
 </head>
 <body>
-	<!--[if lt IE 7]><p class="chromeframe">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/">upgrade your browser</a>.</p><![endif]-->
+	<!--[if lt IE 9]>
+		<div class="browsehappy">
+			<p>You are using an <strong>outdated</strong> browser.</p>
+			<p>Before you can continue, please <a href="http://browsehappy.com/">upgrade your browser</a> to improve your experience.</p>
+			<p>It is not possible to continue with outdated browser...sorry!</p>
+		</div>
+	<![endif]-->
+	
 	<div class="container-narrow">
 
 		<div class="header">
@@ -56,7 +63,7 @@
 		</div>
 
 		<form class="form-horizontal player-form" action="#" method="post" id="frm-playerForm">		
-			
+
 			<!-- Rating scale 1 -->
 			<legend class="quality">How would you rate the overall quality of this video? (ACR 7)</legend>
 			<div class="scale1">
@@ -64,15 +71,25 @@
 
 					<label class="btn btn-gradient disabled">Very bad</label>
 
-					<label class="btn btn-gradient" for="frmplayerForm-quality-0"> <input type="radio" name="quality" id="frmplayerForm-quality-0" value="1" />  Bad </label>
+					<label class="btn btn-gradient" for="frmplayerForm-quality-0">
+						<input type="radio" name="quality" id="frmplayerForm-quality-0" value="1" />  Bad 
+					</label>
 
-					<label class="btn btn-gradient" for="frmplayerForm-quality-1"> <input type="radio" name="quality" id="frmplayerForm-quality-1" value="2" />  Poor </label>
+					<label class="btn btn-gradient" for="frmplayerForm-quality-1">
+						<input type="radio" name="quality" id="frmplayerForm-quality-1" value="2" />  Poor 
+					</label>
 
-					<label class="btn btn-gradient" for="frmplayerForm-quality-2"> <input type="radio" name="quality" id="frmplayerForm-quality-2" value="3" />  Fair </label>
+					<label class="btn btn-gradient" for="frmplayerForm-quality-2">
+						<input type="radio" name="quality" id="frmplayerForm-quality-2" value="3" />  Fair 
+					</label>
 
-					<label class="btn btn-gradient" for="frmplayerForm-quality-3"> <input type="radio" name="quality" id="frmplayerForm-quality-3" value="4" />  Good </label>
+					<label class="btn btn-gradient" for="frmplayerForm-quality-3">
+						<input type="radio" name="quality" id="frmplayerForm-quality-3" value="4" />  Good 
+					</label>
 
-					<label class="btn btn-gradient" for="frmplayerForm-quality-4"> <input type="radio" name="quality" id="frmplayerForm-quality-4" value="5" />  Excellent </label>
+					<label class="btn btn-gradient" for="frmplayerForm-quality-4">
+						<input type="radio" name="quality" id="frmplayerForm-quality-4" value="5" />  Excellent 
+					</label>
 
 					<label class="btn btn-gradient disabled">Ideal</label>
 
@@ -141,42 +158,89 @@
 
 			<!-- Rating scale 6 -->
 			<legend class="quality">How would you rate the overall quality of this video? (ACR 5)</legend>
-			<fieldset class="scale6"> 
+			<div class="scale6" id="scale-stars"> 
 
-				<input type="radio" id="frmplayerForm-quality-64" name="quality" value="5" /><label for="frmplayerForm-quality-64" title=" Excellent "></label>
+				<div id="rate-output">
+				0/9
+				</div>
 
-				<input type="radio" id="frmplayerForm-quality-63" name="quality" value="4" /><label for="frmplayerForm-quality-63" title=" Good "></label>
+				<input type="radio" id="frmplayerForm-quality-68" name="quality-stars" value="9" />
+				<label for="frmplayerForm-quality-68" title=" Excellent ">
+					&#9733;
+				</label>
 
-				<input type="radio" id="frmplayerForm-quality-62" name="quality" value="3" /><label for="frmplayerForm-quality-62" title=" Fair "></label>
+				<input type="radio" id="frmplayerForm-quality-67" name="quality-stars" value="8" />
+				<label for="frmplayerForm-quality-67" title=" Excellent ">
+					&#9733;
+				</label>
 
-				<input type="radio" id="frmplayerForm-quality-61" name="quality" value="2" /><label for="frmplayerForm-quality-61" title=" Poor "></label>
+				<input type="radio" id="frmplayerForm-quality-66" name="quality-stars" value="7" />
+				<label for="frmplayerForm-quality-66" title=" Excellent ">
+					&#9733;
+				</label>
 
-				<input type="radio" id="frmplayerForm-quality-60" name="quality" value="1" /><label for="frmplayerForm-quality-60" title=" Bad "></label>
-			</fieldset>
+				<input type="radio" id="frmplayerForm-quality-65" name="quality-stars" value="6" />
+				<label for="frmplayerForm-quality-65" title=" Excellent ">
+					&#9733;
+				</label>
+
+				<input type="radio" id="frmplayerForm-quality-64" name="quality-stars" value="5" />
+				<label for="frmplayerForm-quality-64" title=" Excellent ">
+					&#9733;
+				</label>
+
+				<input type="radio" id="frmplayerForm-quality-63" name="quality-stars" value="4" />
+				<label for="frmplayerForm-quality-63" title=" Good ">
+					&#9733;
+				</label>
+
+				<input type="radio" id="frmplayerForm-quality-62" name="quality-stars" value="3" />
+				<label for="frmplayerForm-quality-62" title=" Fair ">
+					&#9733;
+				</label>
+
+				<input type="radio" id="frmplayerForm-quality-61" name="quality-stars" value="2" />
+				<label for="frmplayerForm-quality-61" title=" Poor ">
+					&#9733;
+				</label>
+
+				<input type="radio" id="frmplayerForm-quality-60" name="quality-stars" value="1" />
+				<label for="frmplayerForm-quality-60" title=" Bad ">
+					&#9733;
+				</label>
+
+			</div>
 
 			<!--Rating Scale 8 -->
 			<legend class="quality">How would you rate the overall quality of this video? (ACR 5)</legend> 
 			<div class="scale8" data-toggle="buttons">	
 
-					<label class="btn b-btn b-btn1" for="frmplayerForm-quality-81" title=" Bad Quality "><input type="radio" id="frmplayerForm-quality-81" name="quality" value="1" />       
-						<span class="glyphicon glyphicon-thumbs-down"></span><span class="glyphicon glyphicon-thumbs-down"></span>									
-					</label>
+				<label class="btn b-btn b-btn1" for="frmplayerForm-quality-81" title=" Bad Quality ">	
+					<input type="radio" id="frmplayerForm-quality-81" name="quality" value="1" />       
+					<span class="glyphicon glyphicon-thumbs-down"></span>
+					<span class="glyphicon glyphicon-thumbs-down"></span>									
+				</label>
 
-					<label class="btn b-btn b-btn2" for="frmplayerForm-quality-82" title=" Poor Quality "><input type="radio" id="frmplayerForm-quality-82" name="quality" value="2" />      
-						<span class="glyphicon glyphicon-thumbs-down"></span>								
-					</label>
+				<label class="btn b-btn b-btn2" for="frmplayerForm-quality-82" title=" Poor Quality ">
+					<input type="radio" id="frmplayerForm-quality-82" name="quality" value="2" />      
+					<span class="glyphicon glyphicon-thumbs-down"></span>								
+				</label>
 
-					<label class="btn b-btn b-btn3" for="frmplayerForm-quality-83" title=" Fair Quality "><input type="radio" id="frmplayerForm-quality-83" name="quality" value="3" />      
-						<span class="glyphicon glyphicon-minus"></span>									
-					</label>				
+				<label class="btn b-btn b-btn3" for="frmplayerForm-quality-83" title=" Fair Quality ">
+					<input type="radio" id="frmplayerForm-quality-83" name="quality" value="3" />      
+					<span class="glyphicon glyphicon-minus"></span>									
+				</label>				
 
-					<label class=" btn b-btn b-btn4" for="frmplayerForm-quality-84"title=" Good Quality "><input type="radio" id="frmplayerForm-quality-84" name="quality" value="4" />       
-						<span class="glyphicon glyphicon-thumbs-up"></span>			
-					</label>
+				<label class=" btn b-btn b-btn4" for="frmplayerForm-quality-84"title=" Good Quality ">
+					<input type="radio" id="frmplayerForm-quality-84" name="quality" value="4" />       
+					<span class="glyphicon glyphicon-thumbs-up"></span>			
+				</label>
 
-					<label class="btn b-btn b-btn5" for="frmplayerForm-quality-85"title=" Excellent Quality "><input type="radio" id="frmplayerForm-quality-85" name="quality" value="5" />               
-						<span class="glyphicon glyphicon-thumbs-up"></span><span class="glyphicon glyphicon-thumbs-up"></span>								
-					</label>	
+				<label class="btn b-btn b-btn5" for="frmplayerForm-quality-85"title=" Excellent Quality ">
+					<input type="radio" id="frmplayerForm-quality-85" name="quality" value="5" />               
+					<span class="glyphicon glyphicon-thumbs-up"></span>
+					<span class="glyphicon glyphicon-thumbs-up"></span>								
+				</label>	
 
 			</div>	
 
@@ -184,27 +248,42 @@
 			<legend class="quality">How would you rate the overall quality of this video? ACR(5)</legend>				
 			<div class="scale15" data-toggle="buttons">
 
-					<div class="btn basic3-btn basic21"  for="frmplayerForm-quality-151" title="Bad"><input type="radio" id="frmplayerForm-quality-151" name="quality" value="1" />
-						<span class="glyphicon glyphicon-star"></span>
-					</div> 														
+				<div class="btn basic3-btn basic21" for="frmplayerForm-quality-151" title="Bad">
+					<input type="radio" id="frmplayerForm-quality-151" name="quality" value="1" />
+					<span class="glyphicon glyphicon-star"></span>
+				</div> 														
 
-					<div class="btn basic3-btn basic22"  for="frmplayerForm-quality-152" title="Poor"><input type="radio" id="frmplayerForm-quality-152" name="quality" value="2" />
-						<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
-					</div>
+				<div class="btn basic3-btn basic22" for="frmplayerForm-quality-152" title="Poor">
+					<input type="radio" id="frmplayerForm-quality-152" name="quality" value="2" />
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+				</div>
 
-					<div class="btn basic3-btn basic23"  for="frmplayerForm-quality-153" title="Fair"><input type="radio" id="frmplayerForm-quality-153" name="quality" value="3" />
-						<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
-					</div>
+				<div class="btn basic3-btn basic23" for="frmplayerForm-quality-153" title="Fair">
+					<input type="radio" id="frmplayerForm-quality-153" name="quality" value="3" />
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+				</div>
 
-					<div class="btn basic3-btn basic24"  for="frmplayerForm-quality-154" title="Good"><input type="radio" id="frmplayerForm-quality-154" name="quality" value="4" />
-						<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
-					</div>															
+				<div class="btn basic3-btn basic24" for="frmplayerForm-quality-154" title="Good">
+					<input type="radio" id="frmplayerForm-quality-154" name="quality" value="4" />
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+				</div>															
 
-					<div class="btn basic3-btn basic25"  for="frmplayerForm-quality-155" title="Excellent"><input type="radio" id="frmplayerForm-quality-155" name="quality" value="5" />
-					<span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span><span class="glyphicon glyphicon-star"></span>
-					</div>
-				</div>	
-						
+				<div class="btn basic3-btn basic25" for="frmplayerForm-quality-155" title="Excellent">
+					<input type="radio" id="frmplayerForm-quality-155" name="quality" value="5" />
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+					<span class="glyphicon glyphicon-star"></span>
+				</div>
+			</div>	
+			
 			
 			<div class="btn-continue">
 				<input class="btn btn-lg btn-success" type="submit" name="submit_" id="frmplayerForm-submit" value="And finish..."/>
@@ -242,7 +321,7 @@
 
 	<script src="js/vendor/jquery-1.10.1.min.js"></script>
 	<script src="js/vendor/bootstrap.min.js"></script>
-	<script src="js/main-ck.js"></script>
+	<script src="js/main.min.js"></script>
 
 </body>
 </html>

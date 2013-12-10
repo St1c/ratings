@@ -1,60 +1,72 @@
 .scale6 {
+	float: left;
+	// margin: 0 0 5px 90px;
+	text-align: center;
 
-    float:left;
-    margin: 0px 0px 5px 90px    
-}
+	&:not(:checked) > input {
+		position: absolute;
+		top: -9999px;
+		clip: rect(0,0,0,0);
 
+		&:checked ~ label {
+			// color: @btn-default-bg;
+			color: #ffd700;
+		}
+	}
 
-.scale6:not(:checked) > input {
-    position:absolute;
-    top:-9999px;
-    clip:rect(0,0,0,0);
+	&:not(:checked) > label {
+		float: right;
+		
+		// width: 160px;
+		margin-left: 20px;
+		padding: 0 .1em;
+		overflow: hidden;
+		
+		font-size: 400%;
+		line-height: 1.2;
+		
+		color: #ddd;
+		white-space: nowrap;
+		cursor: pointer;
 
-}
+		// &:before {
+		// 	content: '★' ;
+		// }
 
-.scale6:not(:checked) > label {
-    float:right;
-    width:160px;
-    padding:0 .1em;
-    overflow:hidden;
-    white-space:nowrap;
-    cursor:pointer;
-    font-size:400%;
-    line-height:1.2;
-    color:#ddd;
+		&:hover,
+		&:hover ~ label {
+			color: @btn-default-bg;
+			// color: #FFD700;
+		}
+	}
 
-    
-}
+	> input:checked + label:hover,
+	> input:checked + label:hover ~ label,
+	> input:checked ~ label:hover,
+	> input:checked ~ label:hover ~ label,
+	> label:hover ~ input:checked ~ label {
+		// color: #FFD700;    
+		color: @btn-default-bg;    
+	}
 
-.scale6:not(:checked) > label:before {
+	> label:active {
+		position: relative;
+		top: 2px;
+		left: 2px;    
+	}
 
-    content: '★' ;
-}
+	#rate-output {
+		float: right;
 
-.scale6 > input:checked ~ label {
-    color: @btn-default-bg;
-    
-}
+		margin-left: 20px;
+		padding: 0 0.1em;
+		overflow: hidden;
 
-.scale6:not(:checked) > label:hover,
-.scale6:not(:checked) > label:hover ~ label {
-    color: gold;
-    
-    
-}
+		font-size: 400%;
+		line-height: 1.2;
 
-.scale6 > input:checked + label:hover,
-.scale6 > input:checked + label:hover ~ label,
-.scale6 > input:checked ~ label:hover,
-.scale6 > input:checked ~ label:hover ~ label,
-.scale6 > label:hover ~ input:checked ~ label {
-
-    color: #ea0;    
-}
-
-.scale6 > label:active {
-    position:relative;
-    top:2px;
-    left:2px;    
-    
+		color: #000;
+		white-space: nowrap;
+		cursor: pointer;
+	}
 }

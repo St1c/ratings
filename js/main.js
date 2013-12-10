@@ -10,6 +10,24 @@ $(document).ready(function() {
 		// console.log(noOfFocuses);
 	};
 
+
+	$("#scale-stars label").on('mouseover', function(){
+		id 		= $(this).attr('for');
+		value 	= $('#' + id).val();
+
+		$('#rate-output').html(value + '/9');
+	});
+
+	$('#scale-stars label').on('mouseleave', function(){
+		if ( $(".player-form  input[name='quality-stars']:checked").length < 1 ) {
+			$('#rate-output').html('0/9');
+		} else {
+			 value = $(".player-form  input[name='quality-stars']:checked").val();
+			 $('#rate-output').html(value + '/9');
+		}
+	});
+
+
 	$(".player-form input[type='submit']").click( function(e) {
 
 		e.preventDefault();
